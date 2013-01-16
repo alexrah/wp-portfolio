@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<wp_option_tree>
+  <row>
+    <id>1</id>
+    <item_id>general_default</item_id>
+    <item_title>General</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>1</item_sort>
+  </row>
+  <row>
+    <id>2</id>
+    <item_id>owner_photo</item_id>
+    <item_title>Photo</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>2</item_sort>
+  </row>
+  <row>
+    <id>3</id>
+    <item_id>owner_first_name</item_id>
+    <item_title>First Name</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>3</item_sort>
+  </row>
+  <row>
+    <id>4</id>
+    <item_id>owner_last_name</item_id>
+    <item_title>Last Name</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>4</item_sort>
+  </row>
+  <row>
+    <id>5</id>
+    <item_id>owner_title</item_id>
+    <item_title>Title</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>5</item_sort>
+  </row>
+  <row>
+    <id>6</id>
+    <item_id>contact_info</item_id>
+    <item_title>Contact Info</item_title>
+    <item_desc></item_desc>
+    <item_type>textarea</item_type>
+    <item_options>8</item_options>
+    <item_sort>6</item_sort>
+  </row>
+  <row>
+    <id>7</id>
+    <item_id>profile_page</item_id>
+    <item_title>Profile Page</item_title>
+    <item_desc></item_desc>
+    <item_type>page</item_type>
+    <item_options></item_options>
+    <item_sort>7</item_sort>
+  </row>
+  <row>
+    <id>8</id>
+    <item_id>resume_page</item_id>
+    <item_title>Resume Page</item_title>
+    <item_desc></item_desc>
+    <item_type>page</item_type>
+    <item_options></item_options>
+    <item_sort>8</item_sort>
+  </row>
+  <row>
+    <id>9</id>
+    <item_id>portfolio_page</item_id>
+    <item_title>Portfolio Page</item_title>
+    <item_desc></item_desc>
+    <item_type>page</item_type>
+    <item_options></item_options>
+    <item_sort>9</item_sort>
+  </row>
+  <row>
+    <id>10</id>
+    <item_id>contact_page</item_id>
+    <item_title>Contact Page</item_title>
+    <item_desc></item_desc>
+    <item_type>page</item_type>
+    <item_options></item_options>
+    <item_sort>10</item_sort>
+  </row>
+  <row>
+    <id>11</id>
+    <item_id>blog_page</item_id>
+    <item_title>Blog Page</item_title>
+    <item_desc></item_desc>
+    <item_type>page</item_type>
+    <item_options></item_options>
+    <item_sort>11</item_sort>
+  </row>
+  <row>
+    <id>58</id>
+    <item_id>work_items_link_status</item_id>
+    <item_title>Link Work Items to Details Page</item_title>
+    <item_desc>If ticked then the title of a work item will be linked to the work item&amp;#039;s details page where you can show a lot more stuff.</item_desc>
+    <item_type>checkbox</item_type>
+    <item_options>Yes</item_options>
+    <item_sort>12</item_sort>
+  </row>
+  <row>
+    <id>54</id>
+    <item_id>disable_blog_sidebar</item_id>
+    <item_title>Disable Blog Sidebar</item_title>
+    <item_desc>If you select &amp;quot;No&amp;quot; then the sidebar on the blog page will be disabled and the width of the content column will be made full width.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>13</item_sort>
+  </row>
+  <row>
+    <id>13</id>
+    <item_id>copyright_text</item_id>
+    <item_title>Copyright Text</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>14</item_sort>
+  </row>
+  <row>
+    <id>14</id>
+    <item_id>contact_form_email</item_id>
+    <item_title>Email for Contact Form Submission</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>15</item_sort>
+  </row>
+  <row>
+    <id>37</id>
+    <item_id>custom_css</item_id>
+    <item_title>Custom CSS</item_title>
+    <item_desc></item_desc>
+    <item_type>textarea</item_type>
+    <item_options>10</item_options>
+    <item_sort>16</item_sort>
+  </row>
+  <row>
+    <id>32</id>
+    <item_id>appearance</item_id>
+    <item_title>Appearance</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>17</item_sort>
+  </row>
+  <row>
+    <id>56</id>
+    <item_id>background_option</item_id>
+    <item_title>Background Option</item_title>
+    <item_desc>Choose whether you want to use a pattern or solid color for the background.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Pattern,Solid Color</item_options>
+    <item_sort>18</item_sort>
+  </row>
+  <row>
+    <id>55</id>
+    <item_id>background_pattern</item_id>
+    <item_title>Background Pattern</item_title>
+    <item_desc>Upload a pattern to override the default pattern which comes with the theme.</item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>19</item_sort>
+  </row>
+  <row>
+    <id>57</id>
+    <item_id>background_color</item_id>
+    <item_title>Background Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>20</item_sort>
+  </row>
+  <row>
+    <id>12</id>
+    <item_id>icons_bg_color_normal</item_id>
+    <item_title>Icons/Menu-Links Background Default Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>21</item_sort>
+  </row>
+  <row>
+    <id>28</id>
+    <item_id>icons_bg_color_selected</item_id>
+    <item_title>Icons/Menu-Links Background Hover/Current State Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>22</item_sort>
+  </row>
+  <row>
+    <id>30</id>
+    <item_id>btn_bg_color</item_id>
+    <item_title>Button Background Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>23</item_sort>
+  </row>
+  <row>
+    <id>31</id>
+    <item_id>btn_bg_hover_color</item_id>
+    <item_title>Button Background Hover Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>24</item_sort>
+  </row>
+  <row>
+    <id>35</id>
+    <item_id>btn_text_color</item_id>
+    <item_title>Button Text Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>25</item_sort>
+  </row>
+  <row>
+    <id>36</id>
+    <item_id>btn_text_hover_color</item_id>
+    <item_title>Button Text Hover Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>26</item_sort>
+  </row>
+  <row>
+    <id>33</id>
+    <item_id>text_link_color</item_id>
+    <item_title>Text Link Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>27</item_sort>
+  </row>
+  <row>
+    <id>34</id>
+    <item_id>text_link_hover_color</item_id>
+    <item_title>Text Link Hover Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>28</item_sort>
+  </row>
+  <row>
+    <id>40</id>
+    <item_id>blog_meta_link_color</item_id>
+    <item_title>Blog Meta Link Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>29</item_sort>
+  </row>
+  <row>
+    <id>41</id>
+    <item_id>blog_meta_link_hover_color</item_id>
+    <item_title>Blog Meta Link Hover Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>30</item_sort>
+  </row>
+  <row>
+    <id>38</id>
+    <item_id>blog_sidebar_link_color</item_id>
+    <item_title>Blog Sidebar Link Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>31</item_sort>
+  </row>
+  <row>
+    <id>39</id>
+    <item_id>blog_sidebar_link_hover_color</item_id>
+    <item_title>Blog Sidebar Link Hover Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>32</item_sort>
+  </row>
+  <row>
+    <id>42</id>
+    <item_id>filter_btn_bg_color</item_id>
+    <item_title>Portfolio Filter Button Background Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>33</item_sort>
+  </row>
+  <row>
+    <id>43</id>
+    <item_id>filter_btn_bg_hover_color</item_id>
+    <item_title>Portfolio Filter Button Background Hover Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>34</item_sort>
+  </row>
+  <row>
+    <id>44</id>
+    <item_id>filter_btn_text_color</item_id>
+    <item_title>Portfolio Filter Button Text Color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>35</item_sort>
+  </row>
+  <row>
+    <id>45</id>
+    <item_id>icons</item_id>
+    <item_title>Fav Icons</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>36</item_sort>
+  </row>
+  <row>
+    <id>46</id>
+    <item_id>fav_icon</item_id>
+    <item_title>Fav Icon</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>37</item_sort>
+  </row>
+  <row>
+    <id>47</id>
+    <item_id>apple_touch_icon</item_id>
+    <item_title>Apple Touch Icon</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>38</item_sort>
+  </row>
+  <row>
+    <id>48</id>
+    <item_id>apple_touch_icon_72</item_id>
+    <item_title>Apple Touch Icon 72</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>39</item_sort>
+  </row>
+  <row>
+    <id>49</id>
+    <item_id>apple_touch_icon_114</item_id>
+    <item_title>Apple Touch Icon 114</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>40</item_sort>
+  </row>
+  <row>
+    <id>15</id>
+    <item_id>social_icons</item_id>
+    <item_title>Social Icons</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>41</item_sort>
+  </row>
+  <row>
+    <id>16</id>
+    <item_id>twitter_id</item_id>
+    <item_title>Twitter ID</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>42</item_sort>
+  </row>
+  <row>
+    <id>17</id>
+    <item_id>facebook_url</item_id>
+    <item_title>Facebook URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>43</item_sort>
+  </row>
+  <row>
+    <id>18</id>
+    <item_id>gplus_url</item_id>
+    <item_title>Google+ URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>44</item_sort>
+  </row>
+  <row>
+    <id>19</id>
+    <item_id>dribbble_id</item_id>
+    <item_title>Dribbble ID</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>45</item_sort>
+  </row>
+  <row>
+    <id>20</id>
+    <item_id>flickr_id</item_id>
+    <item_title>Flickr ID</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>46</item_sort>
+  </row>
+  <row>
+    <id>21</id>
+    <item_id>youtube_id</item_id>
+    <item_title>Youtube ID</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>47</item_sort>
+  </row>
+  <row>
+    <id>22</id>
+    <item_id>vimeo_id</item_id>
+    <item_title>Vimeo ID</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>48</item_sort>
+  </row>
+  <row>
+    <id>23</id>
+    <item_id>linkedin_url</item_id>
+    <item_title>LinkedIn URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>49</item_sort>
+  </row>
+  <row>
+    <id>27</id>
+    <item_id>rss_feed_status</item_id>
+    <item_title>Show RSS Feed Icon on Blog Sidebar</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>50</item_sort>
+  </row>
+  <row>
+    <id>24</id>
+    <item_id>google_maps_and_analytics_settings</item_id>
+    <item_title>Google Maps and Google Analytics Settings</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>51</item_sort>
+  </row>
+  <row>
+    <id>25</id>
+    <item_id>gmaps_api_key</item_id>
+    <item_title>Google Maps API Key</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>52</item_sort>
+  </row>
+  <row>
+    <id>26</id>
+    <item_id>google_analytics_code</item_id>
+    <item_title>Google Analytics Code</item_title>
+    <item_desc></item_desc>
+    <item_type>textarea</item_type>
+    <item_options>8</item_options>
+    <item_sort>53</item_sort>
+  </row>
+  <row>
+    <id>50</id>
+    <item_id>seo</item_id>
+    <item_title>SEO</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>54</item_sort>
+  </row>
+  <row>
+    <id>51</id>
+    <item_id>site_description</item_id>
+    <item_title>Site Description</item_title>
+    <item_desc>Enter a precise and to the point description of the website. Leave blank if you don&amp;#039;t want to add Description meta tag to your website.</item_desc>
+    <item_type>textarea</item_type>
+    <item_options>8</item_options>
+    <item_sort>55</item_sort>
+  </row>
+  <row>
+    <id>52</id>
+    <item_id>site_keywords</item_id>
+    <item_title>Site Keywords</item_title>
+    <item_desc>Separate keywords by comma. Leave blank if you don&amp;#039;t want to add Keywords meta tag to your website.</item_desc>
+    <item_type>textarea</item_type>
+    <item_options>8</item_options>
+    <item_sort>56</item_sort>
+  </row>
+  <row>
+    <id>53</id>
+    <item_id>site_author</item_id>
+    <item_title>Site Author</item_title>
+    <item_desc>This is usually the name of the developer or agency who makes the website. Leave blank if you don&amp;#039;t want to add Author meta tag to your website.</item_desc>
+    <item_type>textarea</item_type>
+    <item_options>3</item_options>
+    <item_sort>57</item_sort>
+  </row>
+</wp_option_tree>

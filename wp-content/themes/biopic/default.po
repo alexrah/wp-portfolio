@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: biopic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-18 11:53+0500\n"
+"PO-Revision-Date: 2012-06-18 11:53+0500\n"
+"Last-Translator: Sher Ali <sher.ali@lucidstudios.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: blog.php:102
+#: category.php:92
+#: single.php:93
+msgid "comments"
+msgstr ""
+
+#: blog.php:102
+#: category.php:92
+#: single.php:93
+msgid "0 Comments"
+msgstr ""
+
+#: blog.php:102
+#: category.php:92
+#: single.php:93
+msgid "1 Comment"
+msgstr ""
+
+#: blog.php:102
+#: category.php:92
+#: single.php:93
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:3
+msgid "Direct access to this page is restricted. Thank you!"
+msgstr ""
+
+#: comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:22
+msgid "This article has "
+msgstr ""
+
+#: comments.php:22
+msgid "no comments"
+msgstr ""
+
+#: comments.php:22
+msgid "one Comment"
+msgstr ""
+
+#: comments.php:22
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: comments.php:32
+msgid "Comments are now closed for this post."
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:77
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:77
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:85
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr ""
+
+#: comments.php:94
+#, php-format
+msgid "Logged in as %1$s. %2$sLog out &raquo;%3$s"
+msgstr ""
+
+#: comments.php:94
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:99
+msgid "Name (required)"
+msgstr ""
+
+#: comments.php:101
+msgid "Email (required)"
+msgstr ""
+
+#: comments.php:103
+msgid "Website"
+msgstr ""
+
+#: comments.php:108
+msgid "Comment (required)"
+msgstr ""
+
+#: comments.php:110
+msgid "Post Comment"
+msgstr ""
+
+#: functions.php:9
+msgid "Biopic Main Menu"
+msgstr ""
+
+#: functions.php:18
+msgid "Profile Sidebar"
+msgstr ""
+
+#: functions.php:20
+msgid "Sidebar for profile page"
+msgstr ""
+
+#: functions.php:28
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:30
+msgid "Sidebar for blog page"
+msgstr ""
+
+#: functions.php:38
+msgid "Contact Sidebar"
+msgstr ""
+
+#: functions.php:40
+msgid "Sidebar for contact page"
+msgstr ""
+
+#: functions.php:48
+msgid "Header Widget Area"
+msgstr ""
+
+#: functions.php:50
+msgid "Widget area at the top left header"
+msgstr ""
+
+#: functions.php:58
+msgid "Footer Widget Area"
+msgstr ""
+
+#: functions.php:60
+msgid "Widget area at the bottom"
+msgstr ""
+
+#: functions.php:169
+msgid "Works"
+msgstr ""
+
+#: functions.php:170
+msgid "Work"
+msgstr ""
+
+#: functions.php:171
+msgid "Add New"
+msgstr ""
+
+#: functions.php:172
+msgid "Add New Work"
+msgstr ""
+
+#: functions.php:173
+msgid "Edit Work"
+msgstr ""
+
+#: functions.php:174
+msgid "New Work"
+msgstr ""
+
+#: functions.php:175
+msgid "View Work"
+msgstr ""
+
+#: functions.php:176
+msgid "Search Works"
+msgstr ""
+
+#: functions.php:177
+msgid "Nothing found"
+msgstr ""
+
+#: functions.php:178
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: functions.php:197
+msgid "Skills"
+msgstr ""
+
+#: functions.php:198
+msgid "Skill"
+msgstr ""
+
+#: functions.php:199
+msgid "Search Skills"
+msgstr ""
+
+#: functions.php:200
+msgid "All Skills"
+msgstr ""
+
+#: functions.php:201
+msgid "Parent Skill"
+msgstr ""
+
+#: functions.php:202
+msgid "Parent Skill:"
+msgstr ""
+
+#: functions.php:203
+msgid "Edit Skill"
+msgstr ""
+
+#: functions.php:204
+msgid "Update Skill"
+msgstr ""
+
+#: functions.php:205
+msgid "Add New Skill"
+msgstr ""
+
+#: functions.php:206
+msgid "New Skill Name"
+msgstr ""
+
+#: functions.php:230
+msgid "Work Options"
+msgstr ""
+
+#: functions.php:241
+msgid "Video URL:"
+msgstr ""
+
+#: functions.php:245
+msgid "Link Title to External URL:"
+msgstr ""
+
+#: functions.php:316
+msgid "Post Options"
+msgstr ""
+
+#: functions.php:327
+msgid "Video ID:"
+msgstr ""
+
+#: functions.php:331
+msgid "Video Type:"
+msgstr ""
+
+#: functions.php:332
+msgid "Youtube"
+msgstr ""
+
+#: functions.php:333
+msgid "Vimeo"
+msgstr ""
+
+#: functions.php:368
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: functions.php:368
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:373
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: header.php:173
+msgid "Please enter your name"
+msgstr ""
+
+#: header.php:182
+msgid "Please enter your email id"
+msgstr ""
+
+#: header.php:187
+msgid "Please enter a valid email id"
+msgstr ""
+
+#: header.php:196
+msgid "Please enter your message"
+msgstr ""
+
+#: header.php:210
+msgid "Form has been successfully submitted."
+msgstr ""
+
+#: header.php:216
+msgid "An error occurred while submitting the form. Please try again."
+msgstr ""
+
+#: portfolio.php:76
+msgid "All"
+msgstr ""
+
+#: includes/shortcodes.php:255
+msgid "Wrong value specified for the type parameter of list shortcode"
+msgstr ""
+
+#: includes/shortcodes.php:401
+msgid "Wrong values specified for gmap (Google Map) shortcode"
+msgstr ""
+
+#: includes/widgets.php:8
+msgid "Shows latest twitter tweets in widgetized area"
+msgstr ""
+
+#: includes/widgets.php:15
+msgid "Biopic Twitter Tweets"
+msgstr ""
+
+#: includes/widgets.php:19
+msgid "follow us on Twitter"
+msgstr ""
+
+#: includes/widgets.php:23
+#: includes/widgets.php:123
+#: includes/widgets.php:257
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets.php:28
+msgid "Twitter ID:"
+msgstr ""
+
+#: includes/widgets.php:33
+msgid "Number of Tweets:"
+msgstr ""
+
+#: includes/widgets.php:108
+msgid "Shows flickr photo stream for a given stream id in widgetized area"
+msgstr ""
+
+#: includes/widgets.php:115
+msgid "Biopic Flickr Photo Stream"
+msgstr ""
+
+#: includes/widgets.php:119
+msgid "Flickr Gallery"
+msgstr ""
+
+#: includes/widgets.php:119
+msgid "view flickr gallery"
+msgstr ""
+
+#: includes/widgets.php:128
+msgid "Flickr ID:"
+msgstr ""
+
+#: includes/widgets.php:133
+msgid "Stream Type (user or group):"
+msgstr ""
+
+#: includes/widgets.php:141
+msgid "Display Type (latest or random):"
+msgstr ""
+
+#: includes/widgets.php:149
+msgid "Number of Thumbs to Show:"
+msgstr ""
+
+#: includes/widgets.php:154
+msgid "Link Text e.g. view flickr gallery:"
+msgstr ""
+
+#: includes/widgets.php:224
+msgid "First specify the flickr id in the widget settings."
+msgstr ""
+
+#: includes/widgets.php:242
+msgid "Shows most recent work"
+msgstr ""
+
+#: includes/widgets.php:249
+msgid "Biopic Recent Work"
+msgstr ""
+
+#: includes/widgets.php:253
+msgid "see portfolio"
+msgstr ""
+
+#: includes/widgets.php:262
+msgid "Portfolio Page:"
+msgstr ""
+
+#: includes/widgets.php:267
+msgid "Number of Projects:"
+msgstr ""
+
+#: includes/widgets.php:284
+msgid "Link Text e.g. see portfolio"
+msgstr ""
+
+#: includes/tinymce/dialog.php:6
+msgid "You don't have access to edit pages and posts"
+msgstr ""
+
+#: includes/tinymce/dialog.php:42
+msgid "Select Shortcode"
+msgstr ""
+
+#: includes/tinymce/dialog.php:44
+msgid "Choose a Shortcode"
+msgstr ""
+
