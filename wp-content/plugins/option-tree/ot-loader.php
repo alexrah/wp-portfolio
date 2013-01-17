@@ -3,7 +3,7 @@
  * Plugin Name: OptionTree
  * Plugin URI:  http://wp.envato.com
  * Description: Theme Options UI Builder for WordPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes.
- * Version:     2.0.8
+ * Version:     2.0.12
  * Author:      Derek Herman
  * Author URI:  http://valendesigns.com
  * License:     GPLv2
@@ -34,9 +34,6 @@ if ( ! class_exists( 'OT_Loader' ) ) {
       /* setup the constants */
       $this->constants();
       
-      /* load text domain */
-      $this->load_textdomain();
-      
       /* include the required admin files */
       $this->admin_includes();
       
@@ -63,7 +60,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
       /**
        * Current Version number.
        */
-      define( 'OT_VERSION', '2.0.8' );
+      define( 'OT_VERSION', '2.0.12' );
       
       /**
        * For developers: Allow Unfiltered HTML in all the textareas.
@@ -100,6 +97,16 @@ if ( ! class_exists( 'OT_Loader' ) ) {
       define( 'OT_SHOW_PAGES', apply_filters( 'ot_show_pages', true ) );
       
       /**
+       * For developers: Show New Layout.
+       *
+       * Run a filter and set to false if you don't want to show the
+       * "New Layout" section at the top of the theme options page.
+       *
+       * @since     2.0.10
+       */
+      define( 'OT_SHOW_NEW_LAYOUT', apply_filters( 'ot_show_new_layout', true ) );
+      
+      /**
        * For developers: Meta Boxes.
        *
        * Run a filter and set to false to keep OptionTree from
@@ -112,10 +119,9 @@ if ( ! class_exists( 'OT_Loader' ) ) {
       /**
        * Check if in theme mode.
        *
-       * If theme mode is false then set the directory path & URL
-       * like it's a plugin. Else make it look in the parent 
-       * theme root directory or child theme directory if 
-       * OT_CHILD_MODE is set to true. 
+       * If OT_THEME_MODE is false, set the directory path & URL
+       * like any other plugin. Otherwise, use the parent themes 
+       * root directory. 
        *
        * @since     2.0
        */
@@ -126,23 +132,13 @@ if ( ! class_exists( 'OT_Loader' ) ) {
         define( 'OT_DIR', trailingslashit( get_template_directory() ) . trailingslashit( basename( dirname( __FILE__ ) ) ) );
         define( 'OT_URL', trailingslashit( get_template_directory_uri() ) . trailingslashit( basename( dirname( __FILE__ ) ) ) );
       }
-  
-    }
-    
-    /**
-     * Load the text domain.
-     *
-     * @return    void
-     *
-     * @access    private
-     * @since     2.0
-     */
-    public function load_textdomain() {
-      if ( false == OT_THEME_MODE ) {
-        load_plugin_textdomain( 'option-tree', false, OT_DIR . 'languages' );
-      } else {
-        load_theme_textdomain( 'option-tree', OT_DIR . 'languages' );
-      }
+      
+      /**
+       * Relative path to the languages directory.
+       *
+       * @since     2.0.10
+       */
+      define( 'OT_LANG_DIR', dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
     
     /**
@@ -224,6 +220,14 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      */
     public function hooks() {
       
+      /* load the text domain  */
+      if ( false == OT_THEME_MODE ) {
+        add_action( 'plugins_loaded', array( &$this, 'load_textdomain' ) );
+      } else {
+        add_action( 'after_setup_theme', array( &$this, 'load_textdomain' ) );
+      }
+      
+      /* load the Meta Box assets */
       if ( OT_META_BOXES == true ) {
       
         /* add scripts for metaboxes to post-new.php & post.php */
@@ -293,6 +297,22 @@ if ( ! class_exists( 'OT_Loader' ) ) {
     }
     
     /**
+     * Load the text domain.
+     *
+     * @return    void
+     *
+     * @access    private
+     * @since     2.0
+     */
+    public function load_textdomain() {
+      if ( false == OT_THEME_MODE ) {
+        load_plugin_textdomain( 'option-tree', false, OT_LANG_DIR . 'plugin' );
+      } else {
+        load_theme_textdomain( 'option-tree', OT_LANG_DIR . 'theme-mode' );
+      }
+    }
+    
+    /**
      * Adds the global CSS to fix the menu icon.
      */
     public function global_admin_css() {
@@ -307,7 +327,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding a new section.
      */
     public function add_section() {
-      echo ot_sections_view( 'option_tree_settings[sections]', $_GET['count'] );
+      echo ot_sections_view( 'option_tree_settings[sections]', $_REQUEST['count'] );
       die();
     }
     
@@ -315,7 +335,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding a new setting.
      */
     public function add_setting() {
-      echo ot_settings_view( $_GET['name'], $_GET['count'] );
+      echo ot_settings_view( $_REQUEST['name'], $_REQUEST['count'] );
       die();
     }
     
@@ -323,7 +343,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding a new list item setting.
      */
     public function add_list_item_setting() {
-      echo ot_settings_view( $_GET['name'] . '[settings]', $_GET['count'] );
+      echo ot_settings_view( $_REQUEST['name'] . '[settings]', $_REQUEST['count'] );
       die();
     }
     
@@ -331,7 +351,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding new contextual help content.
      */
     public function add_contextual_help() {
-      echo ot_contextual_help_view( $_GET['name'], $_GET['count'] );
+      echo ot_contextual_help_view( $_REQUEST['name'], $_REQUEST['count'] );
       die();
     }
     
@@ -339,7 +359,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding a new choice.
      */
     public function add_choice() {
-      echo ot_choices_view( $_GET['name'], $_GET['count'] );
+      echo ot_choices_view( $_REQUEST['name'], $_REQUEST['count'] );
       die();
     }
     
@@ -347,7 +367,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding a new layout.
      */
     public function add_layout() {
-      echo ot_layout_view( $_GET['count'] );
+      echo ot_layout_view( $_REQUEST['count'] );
       die();
     }
     
@@ -355,7 +375,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
      * AJAX utility function for adding a new list item.
      */
     public function add_list_item() {
-      ot_list_item_view( $_GET['name'], $_GET['count'], array(), $_GET['post_id'], $_GET['get_option'], unserialize( base64_decode( $_GET['settings'] ) ), $_GET['type'] );
+      ot_list_item_view( $_REQUEST['name'], $_REQUEST['count'], array(), $_REQUEST['post_id'], $_REQUEST['get_option'], unserialize( base64_decode( $_REQUEST['settings'] ) ), $_REQUEST['type'] );
       die();
     }
     

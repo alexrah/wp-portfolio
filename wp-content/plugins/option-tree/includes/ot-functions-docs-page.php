@@ -675,6 +675,10 @@ if ( ! function_exists( 'ot_type_meta_boxes' ) ) {
         
         echo '<p>' . __( 'There are a few simple steps you need to take in order to use OptionTree\'s built in Meta Box API. In the code below I\'ll show you a basic demo of how to create your very own custom meta box using any number of the option types you have at your disposal. If you would like to see some demo code, there is a directory named <code>theme-mode</code> inside the <code>assets</code> directory that contains a file named <code>demo-meta-boxes.php</code> you can reference.', 'option-tree' ) . '</p>';
         
+        echo '<p>' . __( 'It\'s important to note that Meta Boxes do not support WYSIWYG editors at this time and if you set one of your options to Textarea it will automatically revert to a Textarea Simple until a valid solution is found. WordPress released this statement regarding the wp_editor() function:', 'option-tree' ) . '</p>';
+        
+        echo '<blockquote>' . __( 'Once instantiated, the WYSIWYG editor cannot be moved around in the DOM. What this means in practical terms, is that you cannot put it in meta-boxes that can be dragged and placed elsewhere on the page.', 'option-tree' ) . '</blockquote>';
+        
         echo '<h5>' . __( 'Create and include your custom meta boxes file.', 'option-tree' ) . '</h5>';
         echo '<ul class="docs-ul">';
           echo '<li>'. __( 'Create a file and name it anything you want, maybe <code>meta-boxes.php</code>.', 'option-tree' ) . '</li>';
@@ -766,6 +770,12 @@ if ( ! function_exists( 'ot_type_theme_mode' ) ) {
  * This will hide the settings & documentation pages.
  */
 add_filter( \'ot_show_pages\', \'__return_false\' );
+
+/**
+ * Optional: set \'ot_show_new_layout\' filter to false.
+ * This will hide the "New Layout" section on the Theme Options page.
+ */
+add_filter( \'ot_show_new_layout\', \'__return_false\' );
 
 /**
  * Required: set \'ot_theme_mode\' filter to true.

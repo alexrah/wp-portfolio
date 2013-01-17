@@ -4,7 +4,7 @@ Donate link: http://bit.ly/NuXI3T
 Tags: admin, theme options, meta boxes, options, admin interface, ajax
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 2.0.8
+Stable tag: 2.0.12
 License: GPLv2
 
 Theme Options UI Builder for WordPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes.
@@ -41,12 +41,54 @@ Yes. OptionTree requires PHP5 to work correctly (so does WP 3.2+).
 
 == Changelog ==
 
+= 2.0.12 =
+* Added additional filters to the array that builds the Theme Option UI.
+* Made option-tree post type private.
+* Revert capabilities back to manage_options in ot-ui-admin.php.
+* Upload now sends the URL of the selected image size to OptionTree.
+* Added new range interval filter to font-size, letter-spacing, & line-height.
+* Allow Typography fields to be filtered out of the UI.
+
+= 2.0.11 =
+* Added filters to the array that builds the Theme Option UI.
+* Added .format-setting-wrap div to allow for complex CSS layouts.
+* Added better namespacing for the Colorpicker option type.
+* Fixed theme-options.php export where it was adding an extra comma.
+
+= 2.0.10 =
+* Fixed a bug where the Textarea row count wasn't working for List Items.
+* Added an apply_filter to the exported theme-options.php file.
+* Added CSS id's to tabs and settings.
+* Allow "New Layout" section to be hidden on the theme options page via a filter.
+* Fixed a bug where the Colorpicker was not closing in List Items.
+* Change capabilities from manage_options to edit_theme_options.
+* Remove Textblock title in List Items & Metaboxes.
+* Fixed a List Item bug that incorrectly added ID's based on counting objects - submitted by Spark
+* Fixed incorrect text domain paths for both plugin and theme mode.
+* Fixed a bug with UI Sortable not properly calculating the container height.
+* Fixed Select dropdown selector bug - submitted by Manfred Haltner
+* Fixed Radio Image remove class bug - submitted by designst
+* Added new typography fields - submitted by darknailblue
+* Added dynamic CSS support for new typography fields.
+* Added new filters to typography fields, including low/high range & unit types.
+
+= 2.0.9 =
+* Fixed the issue where the Textarea Simple and CSS option types were mysteriously being ran through wpautop.
+* Added missing class setting to Textarea, Textarea Simple, & CSS option types.
+* Fixed theme-options.php exported array where label values were not correct.
+* Change GET to POST for all AJAX calls to fix a bug where some servers would not allow long strings to be passed in GET variables.
+* Added the 'ot_after_validate_setting' filter to the validation function.
+* Added $field_id to the ot_validate_setting() for more precise filtering.
+* Added the ot_reverse_wpautop() function that you can run input through just incase you need it.
+* Updated the docs to include information on why WYSIWYG editors are not allowed in meta boxes and that they revert to a Textarea Simple.
+* Update option-tree.pot file.
+
 = 2.0.8 =
 * Add auto import for backwards compatibility of old 1.x files.
 * Added the ability to export settings into a fully functional theme-options.php.
 * Fix typo in docs regarding the filter demo code.
 * Removed slashes in the section and contextual help titles.
-* Attempt to align colorpicker inputs for other browsers (needs to be tested).
+* Made colorpicker input field alignment more cross browser compatible.
 
 = 2.0.7 =
 * Fixed the load order to be compatible with 1.x version themes that think the get_option_tree() function doesn't exist yet.
@@ -171,7 +213,7 @@ Yes. OptionTree requires PHP5 to work correctly (so does WP 3.2+).
 
 == Upgrade Notice ==
 
-= 2.0.8 =
+= 2.0.12 =
 The plugin has undertaken a complete rebuild! If you are not the theme developer, I urge you to contact that person before you upgrade and ask them to test the themes compatibility.
 
 = 1.1.8.1 =

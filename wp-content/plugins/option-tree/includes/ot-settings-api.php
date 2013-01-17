@@ -258,7 +258,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
                 echo '</ul>';
                 
                 /* layouts form */
-                if ( $page['id'] == 'ot_theme_options' )
+                if ( $page['id'] == 'ot_theme_options' && OT_SHOW_NEW_LAYOUT == true )
                   ot_theme_options_layouts_form();
               
               echo '</div>';
@@ -294,7 +294,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
                   
                   /* loop through page sections */
                   foreach( (array) $page['sections'] as $section ) {
-                    echo '<li><a href="#section_' . $section['id'] . '">' . $section['title'] . '</a></li>';
+                    echo '<li id="tab_' . $section['id'] . '"><a href="#section_' . $section['id'] . '">' . $section['title'] . '</a></li>';
                   }
                   
                   echo '</ul>';
@@ -525,7 +525,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
             
             if ( isset( $setting['std'] ) ) {
               
-              $defaults[$setting['id']] = ot_validate_setting( $setting['std'], $setting['type'] );
+              $defaults[$setting['id']] = ot_validate_setting( $setting['std'], $setting['type'], $setting['id'] );
 
             }
   
@@ -600,7 +600,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
                     /* verify sub setting has a type & value */
                     if ( isset( $sub_setting['type'] ) && isset( $input[$setting['id']][$k][$sub_setting['id']] ) ) {
                       
-                      $input[$setting['id']][$k][$sub_setting['id']] = ot_validate_setting( $input[$setting['id']][$k][$sub_setting['id']], $sub_setting['type'] );
+                      $input[$setting['id']][$k][$sub_setting['id']] = ot_validate_setting( $input[$setting['id']][$k][$sub_setting['id']], $sub_setting['type'], $sub_setting['id'] );
                       
                     }
                     
@@ -610,7 +610,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
               
               } else {
                 
-                $input[$setting['id']] = ot_validate_setting( $input[$setting['id']], $setting['type'] );
+                $input[$setting['id']] = ot_validate_setting( $input[$setting['id']], $setting['type'], $setting['id'] );
                 
               }
 
@@ -763,19 +763,23 @@ if ( ! class_exists( 'OT_Settings' ) ) {
     
       foreach ( (array) $wp_settings_fields[$page][$section] as $field ) {
         
-        echo '<div class="format-settings">';
+        echo '<div id="setting_' . $field['id'] . '" class="format-settings">';
     		  
-    		  if ( $field['args']['type'] != 'textblock' ) {
+    		  echo '<div class="format-setting-wrap">';
     		  
-    		    echo '<div class="format-setting-label">';
-  		  
-      		    echo '<h3 class="label">' . $field['title'] . '</h3>';     
+      		  if ( $field['args']['type'] != 'textblock' ) {
+      		  
+      		    echo '<div class="format-setting-label">';
+    		  
+        		    echo '<h3 class="label">' . $field['title'] . '</h3>';     
+            
+              echo '</div>';
+            
+            }
+      
+            call_user_func( $field['callback'], $field['args'] );
           
-            echo '</div>';
-          
-          }
-    
-          call_user_func( $field['callback'], $field['args'] );
+          echo '</div>';
     
         echo '</div>';
         
