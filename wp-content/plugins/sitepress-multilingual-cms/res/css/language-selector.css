@@ -102,7 +102,7 @@
 /* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
 #lang_sel_list li {float:left;width:90px;position:relative;}
 /* style the links for the top level */
-#lang_sel_list a, #lang_sel_list a:visited {display:block;font-size:11px;text-decoration:none !important; color:#444444; border:1px solid #cdcdcd; border-width:0 1px 1px 1px; background:#fff; padding-left:10px; line-height:18px;}
+#lang_sel_list a, #lang_sel_list a:visited {display:block;font-size:11px;text-decoration:none !important; color:#8d8d8d; border-width:0 1px 1px 1px; background:#fff; padding-left:10px; line-height:18px;}
 /* a hack so that IE5.5 faulty box model is corrected */
 * html #lang_sel_list a, * html #lang_sel_list a:visited {width:149px; w\idth:138px;}
 
@@ -121,7 +121,7 @@
 
 #lang_sel_list a.lang_sel_sel{
     background-image: none;
-    color:#444;
+    color:#cdcdcd;
 }
 #lang_sel_list a.lang_sel_sel:hover{
     text-decoration: none;
